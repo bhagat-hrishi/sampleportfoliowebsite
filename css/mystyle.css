@@ -1,84 +1,11 @@
-.cf1{
-    background-color: aqua;
-    height: 30px;
+.logoimage
+{
+    width:155px;
+    /* margin: 10%; */
+    height:155px;
 }
 
-.cf2
-{
-    background-color: blueviolet;
-    height: 30px;
-}
-
-/*for grid system*/
-.cbox
-{
-    border: 1px solid blue;
-    height: 200px;
-}
-.gbox
-{
-    border: 1px solid lightblue;
-}
-
-.divbox1
-{
-    border:2px solid red;
-    background-color:darkolivegreen;
-}
-.divbox2
-{
-    border:2px solid red;
-    background-color: peru;
-}
-
-/*For combining all grids*/
-.combined1
-{
-    border:2px solid red;
-    background-color:yellowgreen;
-}
-.combined2
-{
-    border:2px solid red;
-    background-color: lightsalmon;
-}
-
-img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.mycol
-{
-    background-color: purple;
-    border: 1px solid black;
-    height: 20px;
-    color: wheat;
-}
-
-.bclass
-{
-    background-color: brown;
-    height: 20px;
-    border: 1px solid black;
-    color:white;
-}
-.cclass
-{
-    background-color:lawngreen;
-    height: 20px;
-    border: 1px solid black;
-}
-
-.mediaimage
-{
-    width: 40px;
-    height: 40px;
-    border: 2px solid blue;
-}
-.forimage
-{
-    width: 100px;
-    height: 100px;
+/* for link */
+a,a:hover,a:active{
+    text-decoration: none;
 }
