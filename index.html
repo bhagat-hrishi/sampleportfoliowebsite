@@ -3,134 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrishikesh Bhagat</title>
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!--Including my local css file-->
-    <link rel="stylesheet" href="css/mystyle.css">
-    <!--animate-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-
-    <!--for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
 <body>
-<!--navbar start-->
-<nav class="navbar navbar-dark bg-dark navbar-expand-sm  sticky-top container" >
-    <a href="">
-        <img src="./images/hb.png" alt="Hrishikesh Bhagat" class="navbar-brand" width="60px" height="60px">
-    </a>
-
-    <!--button for toggling effect in mobile-->
-    <button type="button" class="navbar-toggler " data-toggle="collapse" data-taget="#myMenu">
-        <span class="navbar-toggler-icon"></span>
-
-    </button>
-    <!--when we click our navbar button target is following-->
-    <div class="collapse navbar-collapse " id="myMenu">
-        <ul class="navbar-nav">
-            <li class="nav-item"> <a href="#" class="nav-link">About </a></li>
-            <li class="nav-item"> <a href="#" class="nav-link">Education</a></li>
-            <li class="nav-item"> <a href="#" class="nav-link">Project</a></li>
-            <li class="nav-item"> <a href="#" class="nav-link">Skill</a></li>
-            <li class="nav-item"> <a href="#" class="nav-link">Contact</a></li>
-        
+    <div class="main-nav">
+        <a href="" class="toggle"></a>
+        <ul class="nav-items">
+            <li class="nav--item"><a href="#about">About</a></li>
+            <li class="nav--item"><a href="#education">Education</a></li>
+            <li class="nav--item"><a href="">Course</a></li>
+            <li class="nav--item"><a href="#projects">Project</a></li>
+            <li class="nav--item"><a href="#skills">Skills</a></li>
+            <li class="nav--item"><a href="">Contact</a></li>
         </ul>
     </div>
-    
-    
-</nav>
 
-<!--navbar end-->
-
-
-<!-- text-center class used to make content center-->
-<div class="container-fluid text-center">
-    <!-- img-fluid: make responsive border-info:to add colored border -->
-    <img src="./images/profile.png" alt="Hrishikesh_Image" class="img-fluid  border-info  img-thumbnail rounded-circle logoimage" >
-    <br>
-    <h2 class="animate__animated animate__pulse">Hrishikesh Bhagat</h2>
-    <a href="" class="fa fa-linkedin"></a>
-    <a href="" class="fa fa-github"></a>
-    <a href="#" class="fa fa-stack-overflow"></a>
-    <h3> <a href="http://www.walchandsangli.ac.in/" target="_blank">Student Of Walchand College Of Engineering</a></h3>
-    <br>
-    <a href="https://drive.google.com/uc?id=1MxRRh8gQNzrj9S7btuYsadUpo8_Zxim6&amp;export=downlod" class="btn btn-outline-primary">Resume</a>
-    <br> <br>
-</div>
-
-<br><br>
-<!--About me section start-->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2">
-            About Me
-        </div>
-        <div class="col-sm-10 text-justify">
-            I am a Web developer and programmer from Ichalkaranji, India. I am currently pursuing B.Tech in Computer Science and
-            Engineering from Walchand College Of Engineering, Sangli.
+    <div class="main-content">
+        <h2 class="name">Hrishikesh Bhagat</h2>
+        <h1 class="college-name">Walchand College of Engineering Sangli</h1>
+        <a href="" id="resume-button">Download Resume</a>
+        <div>
+            <h2 class="arrow">&#8595;</h2>
         </div>
     </div>
-</div>
-<br><br>
-<!--About me section ends-->
 
 
-
-<!--Project section start-->
-<div class="container animate__animated animate__fadeInRight">
-    <div class="media row border border-info rounded">
-        <a href="project1.html" class=" col-sm-3  align-self-center"><img src="./images/project2.png" alt="SAHAYYAM" class="img-fluid img-thumbnail"></a>
-        
-        <!--py add padding on top and bottom-->
-        <div class="media-body col-sm-9 py-3">
-            <h3>SAHAYYAM</h3>
-            <!--Make left and right justification-->
-            <p class="text-justify">This is Angular , Node.js based web portal that will allow hotels ,events , restaurants to donate surplus food & other
-            things there by helping Non Governmental Organizations and needy people</p>
-            <a href="https://github.com/bhagat-hrishi/Sahayyam" target="_blank">Github-SAHAYYAM</a>
-
-        </div>
-      
-
+    <div id="about">
+        <h1 class="heading">About Me</h1>
+        <div class="about-description">Hi I am a from Jaysingpur, India. I am currently pursuing B.Tech in Computer Science and Engineering from Walchand College Of Engineering, Sangli.</div>
     </div>
-</div>
 
-<!--Project section end-->
 
-<br><br> <br>
-<!--Contact Section-->
-<div class="container row">
-    <div class="col-sm-7">
+    <div id="education">
+        <div class="education-item">
+            <div class="education-time">
+                <p>July 2017 - July 2010 (Expected)</p>
+            </div>
+            <div class="education-institue">
+                <h2>WALCHAND COLLEGE OF ENGINEERING SANGLI</h2>
+                <h4>Bachlor Of Technology</h4>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="education-time">
+               <p>July 2017 - July 2010 (Expected)</p>
+            </div>
+            <div class="education-institue">
+                <h2>WALCHAND COLLEGE OF ENGINEERING SANGLI</h2>
+                <h4>Bachlor Of Technology</h4>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="education-time">
+                <p>July 2017 - July 2010 (Expected)</p>
+            </div>
+            <div class="education-institue">
+                <h2>WALCHAND COLLEGE OF ENGINEERING SANGLI</h2>
+                <h4>Bachlor Of Technology</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="project">
+            <img src="./images/project.jpg" alt="" class="project-image">
+            <div class="project-description">
+                <h3>CLIMATE CLASSIFICATION USING LANDSCAPE IMAGES</h2>
+                <p>
+                    A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language
+                    , paragraphs are usually an expected part of formal writing, used to organize longer prose.
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="./images/project.jpg" alt="" class="project-image">
+            <div class="project-description">
+                <h3>CLIMATE CLASSIFICATION USING LANDSCAPE IMAGES</h2>
+                <p>
+                    A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language
+                    , paragraphs are usually an expected part of formal writing, used to organize longer prose.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="skill"></div>
+    </div>
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
         <form action="">
-            <div class="form-goup">
-                <input type="email" name="Enter email"  class="contact_me" id="email_id" placeholder="Enter email">
-            </div>
-            <br>
-            <div class="form-group">
-                <textarea name="message" id="message" class="contact_me" rows="5"  placeholder="Enter Message"></textarea>
-            </div>
-            <div class="form-group">
-                <button onclick="" class="btn btn-outline-primary contact_me">Submit</button>
-            </div>
+            <input type="email" placeholder="Your  email">
+            <textarea name="message" id="message" cols="60" rows="13" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
         </form>
+        
     </div>
-    <div class="col-sm-5">
-    <a href="https://www.linkedin.com/in/hrishikeshbhagat"  target="_blank" class="fa fa-linkedin"></a>
-    <a href="https://github.com/bhagat-hrishi"  target="_blank" class="fa fa-github"></a>
-    <a href="https://stackoverflow.com/users/10161958/hrishi007"  target="_blank" class="fa fa-stack-overflow"></a>
-    <a href="https://www.quora.com/profile/Hrishi-Bhagat-7"  target="_blank" class="fa fa-quora"></a>
-    <a href="#" target="_blank"  class="fa fa-twitter"></a>
-    <a href="#" target="_blank"  class="fa fa-instagram"></a>
-    
-   
-    </div>
-</div>
 
-
-    <!--Added javascript-->
-    <script src="js/jqeury.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <footer>
+        <div class="footer-item" >
+           <b>No</b> Copyright&#169;
+            Feel Free to Copy &#128540;
+        </div>
+        <div class="footer-item">
+            <ul>
+                <li> 
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github"></i>
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin"></i>
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-quora"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
