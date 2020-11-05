@@ -18,9 +18,6 @@ html{
     /* cursor: pointer; */
 }
 
-.close-drop-down{
-    display: none;
-}
 
 .nav-items{
     text-align: center;
@@ -497,12 +494,14 @@ footer{
     
     .drop-down{
         display: block;
-        background: white;
-        color: #3498db;
+        background: #3498db;
+        color:white ;
         cursor: pointer;
         width: 100%;
         padding: 0;
-        margin-left: 0;
+        margin-right: 0;
+        font-size: 3.5vh;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
     }
 
     .nav-items{
