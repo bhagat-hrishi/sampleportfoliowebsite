@@ -502,6 +502,7 @@ footer{
         margin-right: 0;
         font-size: 3.5vh;
         box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+        
     }
 
     .nav-items{
@@ -531,6 +532,8 @@ footer{
     
     #education {
         margin-bottom: 5vh;
+         overflow: scroll;
+       
     }
 
     .education-container {
