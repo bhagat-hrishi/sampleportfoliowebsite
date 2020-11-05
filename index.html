@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- For animation purpose from animate.style -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Sample Website</title>
 </head>
 <body>
-    <div class="main-nav">
-        <a href="" class="toggle"></a>
-        <ul class="nav-items">
-            <li class="nav--item"><a href="#about">About</a></li>
-            <li class="nav--item"><a href="#education">Education</a></li>
-            <li class="nav--item"><a href="">Course</a></li>
-            <li class="nav--item"><a href="#projects">Project</a></li>
-            <li class="nav--item"><a href="#skills">Skills</a></li>
-            <li class="nav--item"><a href="">Contact</a></li>
-        </ul>
-    </div>
+    <div class="main">
 
-    <div class="main-content">
-        <h2 class="name">Hrishikesh Bhagat</h2>
-        <h1 class="college-name">Walchand College of Engineering Sangli</h1>
-        <a href="" id="resume-button">Download Resume</a>
-        <div>
-            <h2 class="arrow">&#8595;</h2>
+        <div class="main-nav">
+            <a href="#" class="drop-down"><i class="fa fa-bars" style="font-size: 3vh;"></i></a>
+            <a href="" class="close-drop-down">close X</a>
+            <ul class="nav-items">
+                <li class="nav--item"><a href="#about">About</a></li>
+                <li class="nav--item"><a href="#education">Education</a></li>
+                <li class="nav--item"><a href="#course-work">Course</a></li>
+                <li class="nav--item"><a href="#projects">Project</a></li>
+                <li class="nav--item"><a href="#skills">Skills</a></li>
+                <li class="nav--item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2 class="name animate__animated  animate__zoomIn">Hrishikesh Bhagat</h2>
+            <h1 class="college-name">Walchand College of Engineering Sangli</h1>
+            <a href="" id="resume-button">Download Resume</a>
+            <div>
+                <a href="#about" class="arrow">&#8595;</a>
+            </div>
         </div>
     </div>
+    
 
 
     <div id="about">
@@ -37,44 +46,61 @@
 
 
     <div id="education">
-        <div class="education-item">
-            <div class="education-time">
-                <p>July 2017 - July 2010 (Expected)</p>
+        <h2 class="education-title">Education</h2>
+        <div class="education-container">
+            
+            <div class="timeline-item" date-is='July 2017 - July 2021 (Expected)'>
+                <h2 class="education-institue animate__animated animate__slideInRight">Walchand Collge of Engineering , Sangli </h2>
+                <p>
+                    Bachlor of Technology
+                </p>
             </div>
-            <div class="education-institue">
-                <h2>WALCHAND COLLEGE OF ENGINEERING SANGLI</h2>
-                <h4>Bachlor Of Technology</h4>
+            
+            <div class="timeline-item" date-is='July 2015 - July 2017'>
+                <h2 class="education-institue animate__animated animate__slideInRight">SHRI BALAJI JUNIOR COLLEGE,ICHALKARANJI</h2>
+                <p>
+                   HSC
+                </p>
             </div>
+            
+            <div class="timeline-item" date-is='July 2015 - July 2017'>
+                <h2 class="education-institue animate__animated animate__slideInRight">LAXMINARAYAN MALU HIGHSCHOOL,JAYSINGPUR</h2>
+                <p>
+                   SSC
+                </p>
+            </div>
+            
         </div>
-        <div class="education-item">
-            <div class="education-time">
-               <p>July 2017 - July 2010 (Expected)</p>
+    </div>
+
+
+    <div id="course-work">
+        <div class="certificates">
+            <h2>Certificates</h2>
+            <div class="certificate">
+                <h2>Title of Certificate</h2>
+                <img src="./images/certificate.jpg" alt="certificate for competition">
             </div>
-            <div class="education-institue">
-                <h2>WALCHAND COLLEGE OF ENGINEERING SANGLI</h2>
-                <h4>Bachlor Of Technology</h4>
-            </div>
-        </div>
-        <div class="education-item">
-            <div class="education-time">
-                <p>July 2017 - July 2010 (Expected)</p>
-            </div>
-            <div class="education-institue">
-                <h2>WALCHAND COLLEGE OF ENGINEERING SANGLI</h2>
-                <h4>Bachlor Of Technology</h4>
+            <div class="certificate">
+                <h2>Title of Certificate</h2>
+                <img src="./images/certificate.jpg" alt="certificate for competition">
             </div>
         </div>
     </div>
 
     <div id="projects">
+        <h2>Projects</h2>        
         <div class="project">
             <img src="./images/project.jpg" alt="" class="project-image">
             <div class="project-description">
-                <h3>CLIMATE CLASSIFICATION USING LANDSCAPE IMAGES</h2>
+                <h3>
+                    CLIMATE CLASSIFICATION USING LANDSCAPE IMAGES
+                </h3>
                 <p>
                     A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language
                     , paragraphs are usually an expected part of formal writing, used to organize longer prose.
                 </p>
+                <h4><a href="">Visit Project</a></h4>
             </div>
         </div>
         <div class="project">
@@ -85,22 +111,31 @@
                     A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language
                     , paragraphs are usually an expected part of formal writing, used to organize longer prose.
                 </p>
+                <h4><a href="">Visit Project</a></h4>
             </div>
         </div>
     </div>
 
     <div id="skills">
-        <div class="skill"></div>
+        <h2 class="skill-title">Skills</h2>
+        <ul>
+            <li class="skill">C</li>
+            <li class="skill">C++</li>
+            <li class="skill">Python</li>
+            <li class="skill">Java</li>
+            <li class="skill">Github</li>
+            <li class="skill">Docker</li>
+        </ul>
     </div>
+
 
     <div id="contact">
         <h2>Get in Touch</h2>
         <form action="">
             <input type="email" placeholder="Your  email">
-            <textarea name="message" id="message" cols="60" rows="13" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" cols="0" rows="13" placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
         </form>
-        
     </div>
 
     <footer>
@@ -143,5 +178,7 @@
             </ul>
         </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

@@ -3,40 +3,68 @@ body{
     box-sizing: border-box;
 }
 
+html{
+     scroll-behavior: smooth;/*For smooth scrolling*/
+}
+
+.main{
+    background: rgba(33,125,187,0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.drop-down{
+    display: none;
+    /* cursor: pointer; */
+}
+
+.close-drop-down{
+    display: none;
+}
 
 .nav-items{
-
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background: white;
-    border: 1px solid black;
-   
+    display: block;
+    margin-top: 0;
+    padding: 0;
     border-radius:5px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: none;
 }
 
-.toggle {
-    display: none;
-}
+
+
+
 
 .nav--item{
     display: inline-block;
-    width: 14%;
-    padding: 8px;
+    width:auto;
+    padding: 6px;
     padding-bottom: 16px;
 }
 
+/* .main-nav ul:first-child{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.main-nav ul:last-child {
+    margin-right: 0;
+    padding-right: 0;
+} */
 .nav--item a{
     text-decoration: none;
-    color: #ff0000;
+    color: #3498db;
     padding: 8px;
 }
 
 .nav--item a:hover{
-    background: #c0b9b9;
+    background: #f7f3f3;
     border-radius:5px;
 }
 
@@ -46,26 +74,40 @@ body{
     padding-top:20vh;
 }
 
+.college-name{
+    color: #a0cfee;
+}
 .main-content a{
     text-decoration: none;
     padding: 16px;
-    border-radius: 5px;
+    color: #fff;
+    border-radius: 30px;
     display: inline-block;
 }
+
 
 #resume-button{
-
-    border: 2px solid black;
+    border: 3px solid #fff;
 }
 
+#resume-button:hover{
+    background: #fff;
+    color: #3498db;
+}
 .main-content .arrow{
-    border:1px solid black;
+    border:2px solid white;
     border-radius: 50%;
-    width: 2%;
-    margin: auto;
-    padding: auto;
-    display: inline-block;
-    margin-top:40vh;
+    color: white;
+    width: 0.5%;
+    height: 0.5%;
+    margin-top:30vh;
+    padding:0.5%;
+}
+
+.arrow:hover{
+    background: white;
+    color: #374054;
+    font-weight: 1200px;
 }
 
 
@@ -73,49 +115,177 @@ body{
 #about{
     padding: 32px;
     padding-top: 104px;
-    display: inline-block;
+    width: 80%;
+    margin: auto;
     vertical-align: middle;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #about .heading{
-    margin-left:10%;
+    display: inline-block;
+    color: #374054;
     width: 20%;
-    float: left;
-    border:1px solid black;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0
+    /* border:1px solid black; */
 }
 
 #about .about-description{
-    width: 50%;
-    margin-right: 10%;
-    float:right;
-    border:1px solid black;
-    
+    width: 60%;
+    display: inline-block;
+    /* m/argin-right: 10%; */
+    margin-left: 10%;
+    /* border:1px solid black; */
+    color: #74808a;
 }
 
 #education{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     clear: both;
+    /* margin-bottom: 40%; */
+    background: #f2f2f5;
+    border-bottom: 1px solid #dcd9d9;
+    
+
 }
 
-.education-item{
+.education-title {
+    color: #374054;
+    font-size: 2em;
+    font-weight: 300;
+    margin:2% 0 5% 0;
+    text-align: center;
+
+}
+
+.education-container{
+    width: 60%;
+    margin-left: 25%;
+    margin-right:15%;
+}
+
+.education-institue{
+    color: #374054;   
+    text-transform: uppercase;
+    width: 80%;
+    margin: auto;
+}
+
+.education-container p {
+    color: #374054;
+    width: 80%;
+    margin: auto;
+}
+/* .education-item{
     width: 100%;
     display: block;
-    vertical-align: middle;
 }
 
 .education-time{
     width: 30%;
     float: left;
+    border-right: 1px solid black;
 }
 .education-institue{
     width: 60%;
     float: right;
+    border:1px solid #e6e6e6;
+    padding: 15px;
+    margin-bottom: 5%;
+    color: #374054;
+} */
+
+
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  width: 80%;
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: .785rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
 }
 
 
+/* For course-work */
+.certificates{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+}
 
+.certificates h2{
+    color: #374054;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.certificate{
+    width: 98%;
+    height: 20%;
+    margin: auto;
+    padding: 8px;
+    border: 1px solid #374054;
+    margin-bottom: 5%;
+}
+
+.certificate h2 {
+    text-transform: uppercase;
+}
+
+.certificate img {
+    width: 98%;
+    margin: auto;
+}
+
+.certificate:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#projects {
+    background: #f2f2f5;
+    padding: 5%;
+}
+#projects h2{
+    text-align: center;
+    color: #374054;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
 
 .project {
     width: 80%;
@@ -124,11 +294,12 @@ body{
     /* vertical-align: middle; */
     padding: 8px;
     margin-bottom: 2%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
 }
 
 .project-image{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100px;
     object-fit: cover;
     display: inline-block;
@@ -140,11 +311,12 @@ body{
 }
 
 .project-description{
-    width: 71%;
+    width: 65%;
     margin-right: 1%;
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 8px;
+    text-justify: inter-word;
 }
 
 .project-description h3{
@@ -152,11 +324,60 @@ body{
     text-align: center;
 }
 
+.project-description h4 {
+    display: block;
+    border: 1px solid black;
+}
+.project-description h4 a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#skills{
+    margin-top: 2%;
+}
+
+.skill-title{
+    color: #374054;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: center;   
+}
+
+#skills ul {
+    list-style-type: none;
+    display: inline-block;
+    width: 40%;
+    margin-left: 32%;
+    margin-right: 23%;
+}
+.skill{
+    display: inline-block;
+    width: auto;
+    margin: 1.5%;
+    padding: 8px;
+    color: #374054;
+    background: #e4e4ea;
+}
+
+.skill:hover{
+    background: #374054;
+    color: #e4e4ea;
+}
+
+
+
 #contact {
     text-align: center;
-    background: #4da8da;
+    background: #3498db;
     padding-top:2%;
     color: white;
+    /* border: 1px solid black; */
 }
 
 
@@ -164,14 +385,16 @@ body{
     width: 30%;
     margin-left: 35%;
     margin-right: 35%;
-    margin-bottom:10%;
+    margin-bottom:5%;
 }
+
 #contact input {
     width: 95%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
     display: block;
-    background: #007CC7;
+    border: none;
+    background: #1d6fa5;
 }
 ::placeholder{
     color: white;
@@ -181,8 +404,10 @@ body{
 #contact #message{
     margin-bottom: 16px;
     max-width: 100%;
-    background: #007CC7;
-    
+    background: #1d6fa5;
+    width:98%;
+    border: none;
+    transition: .5s ease all;
 }
 
 #contact button {
@@ -191,23 +416,31 @@ body{
     margin-bottom: 16px;
     cursor: pointer;
     background: white;
-    color: rgb(0, 204, 255);
-    border-radius: 5px;
+    color:#3498db;
+    border-radius: 4px;
+    font-weight: 700;
+    border:none;
 }
 
 #contact button:hover{
-    box-shadow: 5px  5px rgb(206, 204, 204);
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     border:none;
 }
+
 
 
 footer{
        padding: 8px;
+       margin-top: 0;
+       color: #74808a;
 }
+
 .footer-item{
     width: 40%;
     margin: auto;
     display: inline-block;
     text-align: center;
+     font-size:22px;
  }
 
 
@@ -220,6 +453,15 @@ footer{
 .footer-item li {
     display: inline-block;
     width: 10%;
+}
+
+.footer-item li a{
+    color: #74808a;
+   
+}
+
+.footer-item li a:hover,a:active{
+    color: black;
 }
 /* Mobile style */
 
@@ -245,13 +487,78 @@ footer{
         margin: auto;
         float: none;
     }
+    
+
+}
+
+
+
+@media screen and (max-width:700px) {
+    
+    .drop-down{
+        display: block;
+        background: white;
+        color: #3498db;
+        cursor: pointer;
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .nav-items{
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        z-index: 10;
+        margin: 0;
+    }
+
+    .nav--item{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav--item a{
+        width: 100%;
+        display: block;
+        text-decoration: none;
+    }
+    /* Apply open class when we click drop-down  */
+    .open {
+        height: auto;
+    }
+
+    
+    #education {
+        margin-bottom: 5vh;
+    }
+
+    .education-container {
+        width: 100%;
+
+    }
+    .education-institue{
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .certificates{
+        width: 100%;
+    }
+    .certificate{
+        width: 96%;
+        margin: auto;
+    }
+
     .project{
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
     .project-image{
-        border: 1px solid black;
+        /* border: 1px solid black; */
         height: 30vh;
         width: 90%;
         margin: auto;
@@ -263,35 +570,17 @@ footer{
         width: 90%;
         margin: auto;
         display: inline-block;
-        border: 1px solid black;
+        /* border: 1px solid black; */
 
     }
-
+    
+    
+    
     #contact form{
         width: 80%;
         margin: auto;
     }
-}
-
-@media screen and (max-width:600px){
-    .toggle{
-        width: 3vh;
-        height: 3vh;
-        object-fit:cover;
-        float: right;
-        margin-top: 2vh;
-        cursor: pointer;
-        display: block;
-        background:url('../images/hamburger-menu.png');
-        /* background: #ff0000; */
-
-    }
-    .nav-items{
-        display: none;
-    }
-}
-
-@media screen and (max-width:700px) {
+   
     .footer-item{
         display: block;
         width: 80%;
@@ -301,3 +590,4 @@ footer{
         margin-left: 0;
     }
 }
+
